@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Montserrat:wght@400;600;800&display=swap");
 
+/* ------------------------- VARIABLES ------------------------- */
+
 :root {
   --background-grey: #eceeea;
   --background-white: #ffffff;
   --celeste: #5ce1e6;
-  --lightblue: #2d3ce9;
-  --text-grey: #7e7e7e;
+  --text-grey: #666666;
+  --text-black: #000000;
 }
+
+/* ------------------------- RESET ------------------------- */
 
 * {
   margin: 0;
@@ -18,59 +22,67 @@
   /* border: 1px salmon solid; */
 }
 
+/* ------------------------- HEADER Y NAVBAR ------------------------- */
+
 header {
-  background: var(--background-white);
+  background: var(--background-grey);
   width: 100%;
   height: 60px;
-  padding: 0 50px;
+  padding: 0 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  box-shadow: 0px 5px 5px 0px var(--text-grey);
+  top: 0px;
 }
 
 header img {
-  width: 150px;
+  width: 130px;
 }
 
-.navbar {
+.navbar,
+.navbar-list {
   display: flex;
   gap: 20px;
 }
 
-.navbar a {
-  padding: 5px 15px;
-  color: var(--celeste);
-  border: 1px white solid;
+.navbar-list li:last-child > a {
+  padding: 3px 15px;
+  border: 1px solid var(--text-grey);
   border-radius: 5px;
-  font-size: 12px;
+}
+
+.navbar a {
+  color: var(--text-black);
 }
 
 .navbar a:hover {
-  border: 1px var(--lightblue) solid;
-  color: white;
   font-weight: 600;
+}
+
+/* ------------------------- FONDO ------------------------- */
+
+body {
+  background: var(--background-grey);
+}
+
+main {
+  width: 100%;
 }
 
 /* ------------------------- PORTADA ------------------------- */
 
 #portada {
-  background: var(--background-grey);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.portada-container {
   width: 1200px;
-  margin-top: 100px;
+  margin: 0 auto;
+  margin-top: 65px;
+  padding: 70px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.info {
+.portada-info {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -79,28 +91,70 @@ header img {
   gap: 30px;
 }
 
-.info h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 48px;
-  font-weight: 600;
-}
-
-.info p {
+.portada-info h1 {
   width: 80%;
-  color: var(--text-grey);
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  font-weight: 800;
   text-align: center;
 }
 
-.portada-container img {
-  width: 500px;
+.portada-info p {
+  font-size: 14px;
+  color: var(--text-grey);
+  width: 70%;
+  text-align: center;
 }
 
-.info-boton {
-  background: var(--lightblue);
-  color: white;
-  border: 1px var(--pink) solid;
-  border-radius: 10px;
-  padding: 10px 20px;
+.portada-opciones {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.portada-opciones a {
+  padding: 3px 15px;
+  border: 1px solid var(--text-black);
+  border-radius: 5px;
+}
+
+.portada-cotizacion {
+  background: #3a8e91;
+  color: white;
+}
+
+.portada-mas-info {
+  color: var(--text-black);
+}
+
+#portada img {
+  width: 450px;
+}
+
+/* ------------------------- NOSOTROS ------------------------- */
+
+#nosotros {
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 65px;
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nosotros p {
+  width: 80%;
+  text-align: center;
+  color: var(--background-grey);
+}
+
+#nosotros span {
+  font-weight: 500;
 }
