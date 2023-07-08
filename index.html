@@ -13,8 +13,8 @@
         <ul class="navbar-list">
           <li><a href="#portada">Inicio</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -25,8 +25,8 @@
           <p>Existimos para que nuestros clientes encuentren en nosotros una manera sencilla, honesta, comprensible y concreta de aumentar sus ventas en el mundo digital.</p>
 
           <div class="portada-opciones">
-            <a href="#" class="portada-cotizacion">Solicitar cotización</a>
-            <a href="#" class="portada-mas-info">Más información</a>
+            <a href="#contacto" class="portada-cotizacion">Solicitar cotización</a>
+            <a href="#servicios" class="portada-mas-info">Más información</a>
           </div>
         </div>
 
@@ -36,6 +36,75 @@
       <section id="nosotros">
         <p>Nuestra experiencia en la <span>gestión de campañas digitales</span> de diversos productos y servicios nos prepara para los desafíos de cada industria y actividad. Desarrollamos <span>estrategias de marketing digital</span> para nuestros clientes, desde la etapa de planeamiento hasta la implementación de campañas, medición de resultados y asesoramiento personalizado.</p>
       </section>
+
+      <section id="servicios">
+        <h1>Nuestra metodología</h1>
+        <p>Generamos nuestra propia metodología para llegar al éxito. Por nuestro Know How evolucionamos a las mejores empresas líderes del mercado.</p>
+
+        <div class="cards-container">
+          <div class="cards">
+            <img src="./assets/lista-de-verificacion.gif" alt="" />
+            <h3>Etapa 1</h3>
+            <p>Comprender el contenido del cliente y ver sus necesidades.</p>
+          </div>
+
+          <div class="cards">
+            <img src="./assets/grafico-de-linea.gif" alt="" />
+            <h3>Etapa 2</h3>
+            <p>Diseñar de estrategia con los objetivos.</p>
+          </div>
+
+          <div class="cards">
+            <img src="./assets/promover.gif" alt="" />
+            <h3>Etapa 3</h3>
+            <p>Correr las campañas y los anuncios para llegar a ese objetivo que nos propusimos.</p>
+          </div>
+
+          <div class="cards">
+            <img src="./assets/flujo-de-dinero.gif" alt="" />
+            <h3>Etapa 4</h3>
+            <p>Revisar cómo fue el proceso e iteramos para obtener mejoras.</p>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer id="contacto">
+      <img class="contactanos" src="./assets/Email campaign-pana.svg" alt="" />
+
+      <div class="derecha">
+        <h2>¿Estás listo para potenciar tu negocio?</h2>
+        <h3>Contactanos</h3>
+
+        <form class="formulario">
+          <div class="name">
+            <label for="name">Nombre:</label>
+            <input type="text" />
+          </div>
+
+          <div class="lastname">
+            <label for="lastname">Apellido:</label>
+            <input type="text" />
+          </div>
+
+          <div class="correo">
+            <label for="email">Correo</label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div class="message">
+            <label for="message">Mensaje:</label>
+            <input type="text" name="message" id="message" />
+          </div>
+
+          <input type="submit" value="Enviar" class="form-enviar" />
+        </form>
+
+        <div class="redes">
+          <a href="https://web.whatsapp.com/" target="_blank"><img src="./assets/icons8-whatsapp-24.png" alt="Whatsapp logo" /></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img src="./assets/icons8-linkedin-24.png" alt="Linkedin logo" /></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="./assets/icons8-instagram-24.png" alt="Instagram logo" /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
