@@ -68,32 +68,34 @@
         </div>
       </section>
     </main>
+
     <footer id="contacto">
-      <img class="contactanos" src="./assets/Email campaign-pana.svg" alt="" />
+      <img class="contactanos-img" src="./assets/Email campaign-pana.svg" alt="" />
 
       <div class="derecha">
         <h2>¿Estás listo para potenciar tu negocio?</h2>
         <h3>Contactanos</h3>
 
         <form class="formulario">
-          <div class="name">
-            <label for="name">Nombre:</label>
-            <input type="text" />
+          <div class="names">
+            <label for="name"></label>
+            <input type="text" class="name" placeholder=" Nombre" required />
+
+            <label for="lastname"></label>
+            <input type="text" class="lastname" placeholder=" Apellido" required />
           </div>
 
-          <div class="lastname">
-            <label for="lastname">Apellido:</label>
-            <input type="text" />
-          </div>
+          <div class="form-info">
+            <label for="email"></label>
+            <input type="email" placeholder=" Correo" name="email" class="email" id="email" required />
 
-          <div class="correo">
-            <label for="email">Correo</label>
-            <input type="email" name="email" id="email" />
+            <label for=""></label>
+            <input type="text" placeholder=" Empresa" name="" id="" />
           </div>
 
           <div class="message">
-            <label for="message">Mensaje:</label>
-            <input type="text" name="message" id="message" />
+            <label for="message"></label>
+            <textarea name="" placeholder=" Mensaje" id="" rows="2" maxlength="300" required></textarea>
           </div>
 
           <input type="submit" value="Enviar" class="form-enviar" />

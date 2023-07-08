@@ -66,10 +66,6 @@ body {
   background: var(--background-grey);
 }
 
-main {
-  width: 100%;
-}
-
 /* ------------------------- PORTADA ------------------------- */
 
 #portada {
@@ -228,9 +224,7 @@ main {
 /* ------------------------- FOOTER ------------------------- */
 
 #contacto {
-  background-image: url(./assets/fondo-seccioncontacto.png);
-  background-position: center;
-  background-size: contain;
+  background: url(./assets/fondo-seccioncontacto.png);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -238,7 +232,7 @@ main {
   color: white;
 }
 
-.contactanos {
+.contactanos-img {
   width: 700px;
 }
 
@@ -257,13 +251,14 @@ main {
 }
 
 .formulario {
-  padding: 20px;
   width: 80%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  border: 1px solid white;
+  gap: 10px;
+  border: 3px solid #3a8e91;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -271,6 +266,134 @@ main {
   -o-border-radius: 20px;
 }
 
+input,
+textarea {
+  color: white;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--text-grey);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: #eceeea;
+}
+
+textarea {
+  min-width: 300px;
+  max-width: 300px;
+  max-height: 80px;
+  min-height: 80px;
+}
+
 .form-enviar {
-  width: fit-content;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.form-enviar:hover {
+  background: #3a8e91;
+  color: white;
+  border: 1px solid #5ce1e6;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.names,
+.form-info {
+  outline: none;
+  border: none;
+  display: flex;
+  gap: 10px;
+}
+
+label:active {
+  border: 1px solid #3a8e91;
+}
+
+.redes {
+  display: flex;
+  gap: 20px;
+}
+
+/* ------------------------- MEDIA QUERIES ------------------------- */
+
+@media (max-width: 1200px) {
+  #portada {
+    width: 80%;
+  }
+
+  .portada-info h1 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  #portada img {
+    width: 50%;
+  }
+
+  #servicios {
+    width: 80%;
+  }
+
+  .cards {
+    width: 90%;
+  }
+
+  #servicios img {
+    width: 60px;
+  }
+
+  #contacto {
+    flex-direction: column;
+  }
+
+  .contactanos-img {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  #portada {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  #portada img {
+    width: 60%;
+    margin-top: 2rem;
+  }
+
+  #servicios {
+    width: 80%;
+  }
+
+  .cards-container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #servicios img {
+    width: 50px;
+  }
+
+  #contacto {
+    flex-direction: column;
+  }
 }
