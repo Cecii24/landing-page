@@ -396,7 +396,7 @@ label:active {
   }
 
   .contactanos-img {
-    width: 70%;
+    width: 60%;
     margin-bottom: 30px;
   }
 }
@@ -452,6 +452,10 @@ label:active {
 @media (max-width: 576px) {
   header {
     padding: 0px 5px;
+  }
+
+  header img {
+    width: 50px;
   }
 
   .portada-info {
