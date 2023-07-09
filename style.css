@@ -477,4 +477,10 @@ label:active {
   #portada img {
     width: 100%;
   }
+
+  .names,
+  .form-info {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
