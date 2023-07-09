@@ -455,7 +455,15 @@ label:active {
   }
 
   header img {
-    width: 50px;
+    width: 80px;
+  }
+
+  .navbar-list {
+    font-size: 12px;
+  }
+
+  .portada-opciones {
+    text-align: center;
   }
 
   .portada-info {
